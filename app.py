@@ -11,7 +11,7 @@ def read_input(filename):
             test_cases.append(nums)
     return test_cases
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET','POST'])
 def process_input():
 
     if 'output' not in request.files:
